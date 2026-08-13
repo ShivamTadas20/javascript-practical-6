@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Account Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Create Account</h2>
+    <form id="authForm" novalidate>
+        <div class="input-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="e.g., name@example.com" autocomplete="off">
+            <div class="error-message" id="emailError">Please enter a valid email address.</div>
+        </div>
+
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter secure password">
+            <div class="error-message" id="passwordError">Must include 1 capital letter, 1 lowercase letter, and 1 number.</div>
+        </div>
+
+        <button type="submit">Submit Registration</button>
+        <div class="success-box" id="successMsg">Form submitted successfully!</div>
+    </form>
+</div>
+
+<!-- New signature element pinned to the bottom right -->
+<footer class="signature">
+    <p>Shivam Tadas</p>
+    <p>25070521502</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
